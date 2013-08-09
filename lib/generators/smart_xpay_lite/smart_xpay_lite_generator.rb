@@ -1,4 +1,4 @@
-class SmartXpayGenerator < Rails::Generators::Base
+class SmartXpayLiteGenerator < Rails::Generators::Base
   source_root File.expand_path('../templates', __FILE__)
 
   def generate_initializer
@@ -7,7 +7,7 @@ class SmartXpayGenerator < Rails::Generators::Base
 
   def generate_routes
     route <<-RUBY
-  ## routes for uplus_smart_xpay
+  ## routes for uplus_smart_xpay_lite
   namespace :uplus do
     post "s_xpay_lite/pay_req_cross_platform" => "smart_xpay_lite#pay_req_cross_platform"
     post "s_xpay_lite/pay_res" => "smart_xpay_lite#pay_res", as: 's_xpay_lite_pay_res'

@@ -78,10 +78,6 @@ module Uplus
     def note_url
       uplus_return = ::UplusSmartXpayLite::Return.new(UplusSmartXpayLite.lgd_mid, params)
 
-      puts "HASH 검증: #{uplus_return.valid?}"
-      puts "거래 성공 체크: #{uplus_return.succeed?}"
-      puts "session data: #{session[:pay_req_map]}"
-
       # hash data 검증
       if !uplus_return.valid?
         # return 데이터 위변호 hash값 검증 실패
