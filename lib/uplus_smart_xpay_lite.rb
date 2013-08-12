@@ -1,7 +1,7 @@
 require "uplus_smart_xpay_lite/version"
 require 'uplus_smart_xpay_lite/configuration'
 require 'uplus_smart_xpay_lite/uplus_order'
-
+require 'uplus_smart_xpay_lite/return'
 
 module UplusSmartXpayLite
   def self.configure
