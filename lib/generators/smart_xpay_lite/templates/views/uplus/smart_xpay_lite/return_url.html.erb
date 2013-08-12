@@ -9,7 +9,7 @@
 <body onload="setLGDResult()">
   <form method="post" name="LGD_PAYINFO" id="LGD_PAYINFO" action="<%= uplus_s_xpay_lite_pay_res_url %>">
      <% @pay_req_map.each_pair do |key, value| %>
-       <%= text_field_tag key, value %>
+       <%= hidden_field_tag key, value %>
      <% end %>
   </form>
 </body>

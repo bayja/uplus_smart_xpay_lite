@@ -25,6 +25,10 @@ module UplusSmartXpayLite
       false
     end
 
+    def cas_flag
+      parsed_resp["LGD_CASFLAG"]
+    end
+
     def config
       Configuration
     end

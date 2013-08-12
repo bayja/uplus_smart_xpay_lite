@@ -31,21 +31,5 @@ module UplusSmartXpayLite
       end
     end
 
-
-    def self.casnoteurl
-      "..."
-    end
-
-    def lgd_kvpmispnoteurl
-      "..."
-    end
-
-    def lgd_kvpmispwapurl
-      "..."
-    end
-
-    def lgd_kvpmispcancelurl
-      "..."
-    end
   end
 end
