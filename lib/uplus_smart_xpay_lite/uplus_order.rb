@@ -13,7 +13,7 @@ module UplusSmartXpayLite
     end
 
     def lgd_hashdata
-      Digest::MD5.hexdigest(config.lgd_mid + lgd_oid + lgd_amount + lgd_timestamp + config.lgd_mertkey)
+      Digest::MD5.hexdigest(config.lgd_mid + lgd_oid + lgd_amount.to_s + lgd_timestamp + config.lgd_mertkey)
     end
 
     [:lgd_oid, :lgd_buyer, :lgd_productinfo, :lgd_amount,
